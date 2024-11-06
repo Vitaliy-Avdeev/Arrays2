@@ -37,14 +37,10 @@ public class Main {
 
         var taskFour = ("Задача №4");
         System.out.println(taskFour);
-        char[] reverseFullName = new char[]{'n', 'a', 'v', 'i', ' ', 'v', 'o', 'n', 'a', 'v', 'i'};
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
-            reverseFullName[reverseFullName.length - 1 - i] = temp;
+        char[] reverseFullName = new char[]{'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
-        for (int i = 0; i < reverseFullName.length; i++)
-            System.out.print(reverseFullName[i] + "");
 
     }
 
